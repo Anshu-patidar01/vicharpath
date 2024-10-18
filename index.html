@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="main-nav container flex">
+        <h1 href="#" onclick="reload()" class="company-logo">vicharpath.com</h1>
+        <div class="nav-links">
+          <ul class="flex">
+            <li
+              class="hover-link nav-item"
+              id="ipl"
+              onclick="onNavItemClick('ipl')"
+            >
+              IPL
+            </li>
+            <li
+              class="hover-link nav-item"
+              id="finance"
+              onclick="onNavItemClick('finance')"
+            >
+              Finance
+            </li>
+            <li
+              class="hover-link nav-item"
+              id="politics"
+              onclick="onNavItemClick('politics')"
+            >
+              Politics
+            </li>
+          </ul>
+        </div>
+        <div class="search-bar flex">
+          <input
+            id="search-text"
+            type="text"
+            class="news-input"
+            placeholder="e.g. Science"
+          />
+          <button id="search-button" class="search-button">Search</button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="imgs">
+        <img
+          class="img1"
+          src="./WhatsApp Image 2024-10-18 at 18.34.49_0c1dc2ea.jpg"
+          alt=""
+          height="400"
+        />
+        <h2>
+          व्हाट्सएप ग्रुप की मस्ती बनी जानलेवा: रहस्यमय तरीके से एमपी के स्टेशन
+          से गायब हुई गुंडों से भरी ट्रेन
+        </h2>
+        <h3>
+          एक अजीब घटना में, दोस्तों के व्हाट्सएप ग्रुप में मजाक करते-करते धिमाज
+          और अंकित सिंह के बीच बात बिगड़ गई। जब एक दोस्त को बुरा लगा, तो उसने
+          दूसरे को धमकी दी, जिसके बाद पहले दोस्त ने उज्जैन से गुंडों को बुला
+          लिया। जवाबी कार्रवाई में, उस दोस्त ने मंदसौर, एमपी से गुंडों को
+          आमंत्रित किया। 17 अक्टूबर, गुरुवार को 1 बजे मंदसौर से निकली ट्रेन 4
+          बजे डोडर (रतलाम) पहुँची, लेकिन उसके बाद ट्रेन में बैठे गुंडों का कुछ
+          पता नहीं चल पाया, जिससे सभी लोग हैरान और चिंतित हैं। ट्रेन के गायब
+          होने से धिमाज भाई परेशान हैं, क्योंकि उन्हें समझ नहीं आ रहा है कि
+          अचानक ट्रेन के सारे लोग एक छोटे स्टेशन (डोडर) से गायब कैसे हो सकते
+          हैं। इस मामले की गंभीरता को देखते हुए, जांच कमेटी बुलाई गई है और एक
+          टीम डोडर भेजी गई है ताकि जल्दी से गुंडे इंदौर (मेडिकैप्स) पहुँच सकें।
+          यह घटना backbancher group के लिए चर्चा (परेशानी)का विषय बन गई है, और
+          सभी इस रहस्य से जल्द पर्दा उठने की उम्मीद कर रहे हैं।
+        </h3>
+        <img
+          class="img1"
+          src="./WhatsApp Image 2024-10-18 at 18.34.50_a4b61dfd.jpg"
+          alt=""
+          height="300"
+        />
+      </div>
+      <div class="cards-container container flex" id="cards-container"></div>
+    </main>
+
+    <template id="template-news-card">
+      <div class="card">
+        <div class="card-header">
+          <img
+            src="https://via.placeholder.com/400x200"
+            alt="news-image"
+            id="news-img"
+          />
+        </div>
+        <div class="card-content">
+          <h3 id="news-title">This is the Title</h3>
+          <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+          <p class="news-desc" id="news-desc">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            saepe quis voluptatum quisquam vitae doloremque facilis molestias
+            quae ratione cumque!
+          </p>
+        </div>
+      </div>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+ 
